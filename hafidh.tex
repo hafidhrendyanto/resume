@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeListItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Hafidh Rendyanto} & Mobile : +6214895299 \\
+  Email : \href{mailto:13517061@std.stei.itb.ac.id}{13517061@std.stei.itb.ac.id} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bandung Institute of Technology}{Bandung, Indonesia}
+      {Bachelor of Science in Computer Science}{Expected Graduation : July 2021}
+      \resumeSubHeadingListStart
+        \resumeItem{Relevant Coursework}
+          {Algorithm and Data Structures, Artificial Intelligence, Machine Learning, Database, Software Engineering Fundamental, Discrete Mathematics, Statistic, Logic, Linear Algebra, Calculus, Operating System, GPU programming.}
+      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bandung Institute of Technology}{Bandung, Indonesia}
+      {Laboratory Assistant | Graphics and Artificial Intelligence Lab}{August 2019 - January 2021}
+      \resumeItemListStart
+        \resumeListItem{Assisted and taught artificial intelligence and machine learning to more than 150 undergraduate students.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Astra Property}{Remote}
+      {Software Engineer Intern | Front End Development}{May 2020 - August 2020}
+      \resumeItemListStart
+        \resumeListItem{Improving Astra Property Sales Moblie App's UI and adding more functionality}
+        \resumeListItem{Integrating new APIs from Astra Property Sales Backend}
+        \resumeListItem{Tech-stack used: Ionic, Angular, NodeJs, Typescript, Sass}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Roketin}{Bandung, Indonesia}
+      {Software Engineer Intern | Backend Development}{June 2019 - August 2019}
+      \resumeItemListStart
+        \resumeListItem{Adding more and improving existing functionality to a set of backend services}
+        \resumeListItem{Imporving security by adding user roles system using jwt token}
+        \resumeListItem{Packaging multiple APIs into an easy to use php package for front end development}
+        \resumeListItem{Tech-stack used: PHP, mongodb, sql, REST API}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{D’order}
+      {Online food delivery and catering serviceusing Laravelas its backend stack andNuxt.js as its frontend stack.}
+    \resumeSubItem{Argus}
+      {Social networkanalysis toolsthat visualize people’s connection and interest using a force graph.}
+    \resumeSubItem{Sentiment GPT}
+      {Aspect Based Sentiment Analysis research on SemEval2016 dataset using Open AI's GPT2.}
+  \resumeSubHeadingListEnd 
+
+
+
+%-----------Organizational-----------------
+\section{Organizational and Leadership Experience}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Co-founder, Colossus Mine}
+      {Small scale ethereum mining operation involving multiple shareholders}
+    \resumeSubItem{Project Manager, Inkubator IT, ITB Informatics Students Association}
+      {Accepting project offerings from general public and outsourcing it to members of ITB Informatics Students Association}
+  \resumeSubHeadingListEnd 
+  
+
+
+
+% --------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+      \textbf{Languages}{: Python, C++, PHP, Javascript, Go}      
+   }
+   \item{
+      \textbf{Technologies}{: Git, Tensorflow, Angular, NodeJs, Docker}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
